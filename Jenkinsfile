@@ -12,21 +12,21 @@ pipeline {
             steps {
                 // Chạy lệnh build
                 echo 'Building the project...'
-                sh './phuong.sh'  // Thay thế bằng lệnh build của bạn
+                sh 'chmod +x ./phuong.sh'  // Thay thế bằng lệnh build của bạn
             }
         }
         stage('Test') {
             steps {
                 // Chạy kiểm thử
                 echo 'Running tests...'
-                sh 'phuong.sh'  // Thay thế bằng lệnh kiểm thử của bạn
+                sh 'chmod +x phuong.sh'  // Thay thế bằng lệnh kiểm thử của bạn
             }
         }
         stage('Deploy') {
             steps {
                 // Triển khai ứng dụng
                 echo 'Deploying the project...'
-                sh './phuong.sh'  // Thay thế bằng lệnh triển khai của bạn
+                sh 'chmod +x ./phuong.sh'  // Thay thế bằng lệnh triển khai của bạn
             }
         }
     }
