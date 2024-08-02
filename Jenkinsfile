@@ -19,7 +19,7 @@ pipeline {
             steps {
                 // Chạy kiểm thử
                 echo 'Running tests...'
-                sh 'chmod +x phuong.sh'  // Thay thế bằng lệnh kiểm thử của bạn
+                sh 'chmod +x luu.sh'  // Thay thế bằng lệnh kiểm thử của bạn
             }
         }
         stage('Deploy') {
